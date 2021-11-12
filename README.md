@@ -1,2 +1,2 @@
-# Fucoes
- Exercicios de Funções
+# Exercicios
+ Exercicios de Faculdade
