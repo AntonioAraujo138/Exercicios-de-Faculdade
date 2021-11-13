@@ -28,5 +28,5 @@ soma = n1 + n2
 print('A soma vale: ', soma)
 print()
 
-print('Não a soma nessa parte, por não ter a função INT em seu código.')
+print('Não a soma nessa parte, por não ter a variável (INT) em seu código.')
 print()
