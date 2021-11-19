@@ -5,20 +5,31 @@ def menu():
     print(5*'-', '[3] Realizar Venda', 5*'-')
     print(5*'-', '[4] Estoque de Produto', 5*'-')
     print(5*'-', '[5] Sair', 5*'-' )
+   
+
+list_produto = []
+list_cliente = []
+
 
 
 def produto():
-    #list_produto = []
-    produto = input('Nome do Pruduto:')
-    
+    while True:
+        list_produto.append(input('Nome do Pruduto: '))
+        list_produto.append(int(input('Quantidade: ')))
+        volta = str(input('Voltar ao Menu [S/N]: '))
+        if volta in 'Ss':
+            break
 
 def cliente():
-    #list_cliente = []
-    nome = input('Nome do Cliente: ')
-    fone = int(input('Telefone: '))
+    while True:
+        list_cliente.append(input('Nome do Cliente: '))
+        list_cliente.append(int(input('Telefone: ')))
+        volta = str(input('Voltar ao Menu [S/N]: '))
+        if volta in 'Ss':
+            break
 
-
-
+   
+    
 
 menu()
 #executo oque ele quer fazer
@@ -29,16 +40,4 @@ produto()
 
 menu()
 op2 = input('Digite a opção: ')
-
-
-
-menu()
-op3 = input('Digite a opção: ')
-
-
-menu()
-op4 = input('Digite a opção: ')
-
-
-menu()
-op5 = input('Digite a opção: ')
+print(list_produto)
